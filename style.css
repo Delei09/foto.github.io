@@ -1,0 +1,281 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* Header*/
+header{
+    background-image:url(img/slide/casamento2.jpg);;
+    background-repeat:round;
+    height: 700px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: rgba(0,0,0,0.4);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+.logo{
+    border-radius: 2em;
+    padding: 30px;
+    margin: 10px;
+}
+.logo-img{
+    border-radius: 80%;
+    border: solid 1px black;
+}
+.nav-link{
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-link li{
+    margin: 15px;
+    padding: 15px;
+}
+.nav-link li a{
+    font-size: 1.5em;
+    color:aliceblue;
+}
+.nav-link li:hover {
+    background: rgba(0,0,0,0.6);
+    border-radius: 5px;
+}
+.but-nav a{
+    color: black;
+}
+.but-nav{
+    display: none;
+}
+
+@media screen and (max-width:890px){
+    .footer-img{
+        max-width: 150px
+    }
+.footer-img p{
+    letter-spacing: 0.3px;
+    font-size: 0.9em;
+    padding: 10px;
+}
+    .nav-link{
+        flex-direction: column;
+        right: 10px;
+    }
+    .but-nav{
+        display: block;
+        float: right;
+        top: 50px;
+        z-index: 1;
+        position: absolute;
+        right: 30px;
+        
+    }
+    nav{
+        display: block;
+        background: rgba(0,0,0,0);
+        position: relative;
+    }
+    .nav-link{
+        opacity: 1;
+        overflow: hidden;
+        left: -500px;
+    }
+    .nav-link li a {
+        color: black;
+    }
+    .show{
+        opacity: 1
+    }
+    .hide{
+        opacity: 0;
+    }
+    
+}
+
+/*Trabalhos Recentes*/
+h2{
+    text-align: center;
+    font-size: 2em;
+    padding: 30px;
+    margin: 10px;
+}
+.img-1{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #1101;
+    margin: 0 auto;;
+    padding: 40px;
+}
+.img-item1{
+    max-width: 800px;
+    margin: 10px;
+    max-height: 500px;
+    text-align: center;
+    padding: 30px;
+    max-height: 400px;
+    
+}
+.img-item1:hover{
+    box-shadow: 0 0 1em black;
+    opacity: 0.8;
+}
+.img-hover{
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.img-hover:hover{
+    display: block;
+    opacity: 1;
+    cursor: pointer;
+}
+.img-hover p{
+    font-size: 1.2em;
+    text-decoration:
+}
+.icones{
+    display: flex;
+    justify-content: center;
+}
+.icones  p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.img1{
+    background-image: url(img/ensaio/bokeh-2594745_640.jpg);
+    background-repeat:round;
+}
+.img2{
+    background-image:url(img/ensaio/couple-1030744_640.jpg);
+    background-repeat:round;
+}
+.img3{
+    background-image:url(img/ensaio/couple-1718244_640.jpg);
+    background-repeat:round;
+}
+.img4{
+    background-image:url(img/ensaio/couple-437968_640.jpg);
+    background-repeat:round;
+}
+.img5{
+    background-image:url(img/ensaio/hands-1150073_640.jpg);
+    background-repeat:round;
+}
+.img6{
+    background-image:url(img/slide/casamento1.jpg);
+    background-repeat:round;
+}
+.bot{
+    display: flex;
+    justify-content: center;
+}
+button{
+    font-size: 1.5em;
+    margin: 20px 20px;
+    background-color:black;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+button:hover{
+    background: rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+
+/*destaque*/
+.des-1{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #1101;
+    margin: 0 auto;;
+    max-width: 1200px;
+    padding: 30px;
+}
+.des-item1{
+    width: 300px;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+    padding: 30px;
+    
+}
+.des-item1:hover{
+    box-shadow: 0 0 1em black;
+    opacity: 0.8;
+}
+.des-hover{
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.des-hover:hover{
+    display: block;
+    opacity: 1;
+    cursor: pointer;
+}
+.des-hover p{
+    font-size: 1.2em;
+    text-decoration:
+}
+.des1{
+    background-image:url(img/ensaio/destaque/dreaming-853218_1280.jpg);
+    background-repeat:round;
+}
+.des2{
+    background-image:url(img/ensaio/destaque/marriage-636018.jpg);
+    background-repeat:round;
+}
+.des3{
+    background-image:url(img/ensaio/destaque/wine-2891894_1920.jpg);;
+    background-repeat:round;
+}
+
+/*footer*/
+footer{
+    background: black;
+}
+.cont-footer{
+    display: flex;
+    flex-wrap: wrap;
+    color: aliceblue;
+    justify-content:space-around;
+    
+}
+.cont-footer img{
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+}
+.item-footer{
+    width: 400px;
+    justify-content: 
+}
+.item-footer i{
+    margin: 10px;
+    align-self: center;
+}
+.item-footer p{
+   text-align: center;
+     letter-spacing: 2px;
+    font-size: 1.1em
+}
+
+.footer-img{
+    display: flex;
+}
+.footer-img p{
+    display: flex;
+    letter-spacing: 2px;
+    font-size: 1.1em
+}
+
