@@ -91,6 +91,7 @@ nav{
         opacity: 1;
         background: rgba(0,0,0,0.4);
         transition: 0.7s;
+        margin: 10px;
     }
     .nav-link li a {
         color: aliceblue;
