@@ -7,7 +7,9 @@
 img{
     max-width: 100%;
 }
-
+body{
+    font-family: 'Rubik', sans-serif;
+}
 /* Header*/
 header{
     background-image:url(img/slide/casamento2.jpg);;
@@ -87,11 +89,11 @@ nav{
     }
     .nav-link{
         opacity: 1;
-        overflow: hidden;
-        left: -500px;
+        background: rgba(0,0,0,0.4);
+        transition: 0.7s;
     }
     .nav-link li a {
-        color: black;
+        color: aliceblue;
     }
     .show{
         opacity: 1
@@ -128,7 +130,7 @@ h2{
 }
 .img-item1:hover{
     box-shadow: 0 0 1em black;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 .img-hover{
     opacity: 0;
@@ -138,10 +140,13 @@ h2{
     display: block;
     opacity: 1;
     cursor: pointer;
+     background: rgba(0,0,0,0.4);
+    color: aliceblue;
 }
 .img-hover p{
-    font-size: 1.2em;
-    text-decoration:
+    font-size: 1.5em;
+    transition: all 0.5s ease-out;
+    color: aliceblue;
 }
 .icones{
     display: flex;
@@ -217,6 +222,8 @@ button:hover{
 .des-hover{
     opacity: 0;
     transition: all 0.5s ease-out;
+    background: rgba(0,0,0,0.4);
+    color: aliceblue;
 }
 .des-hover:hover{
     display: block;
